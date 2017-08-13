@@ -1,0 +1,53 @@
+doctype html
+html
+
+  head
+
+    title Roughly
+
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet')
+    link(href='demo/demo.css' rel='stylesheet')
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+    script(src='build/jquery.roughly.js')
+
+    script.
+      $.fn.roughly.defaults = {
+        startDate: 'January 1, 2015'
+      };
+
+  body
+
+    .wrap
+
+      h1 Roughly
+
+      h2 Example 1
+
+      p.fact Roughly one pair of sunglasses breaks every 14 seconds.
+
+      #example-1.roughly-js
+
+      script.
+        $("#example-1").roughly({waitSeconds: 14});
+
+      p.result ...pairs of sunglasses have broken since January 1, 2015
+
+      h2 Example 2
+
+      p.fact Roughly 7.5 acres of forest is cut down five seconds.
+
+      div(data-wait-seconds='5'
+          data-increase-by='7.5'
+          data-decimals='1').roughly
+
+      p.result ...acres of forest have been cut down since January, 1 2015.
+
+      h2 Example 3
+
+      p.fact Roughly six babies are born every second.
+
+      div(data-increase-by='6').roughly
+
+      p.result ...babies were born since January 1, 2015.

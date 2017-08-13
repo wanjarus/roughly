@@ -1,0 +1,27 @@
+{
+  "name": "roughly",
+  "description": "jQuery plugin that continuously updates an estimated number since a specific date.",
+  "main": [
+    "build/jquery.roughly.js"
+  ],
+  "keywords": [
+    "jquery-plugin",
+    "jquery",
+    "plugin",
+    "rough"
+    "estimate",
+    "date",
+    "counter"
+  ],
+  "authors": [
+    "Daniel Johnson"
+  ],
+  "homepage": "https://github.com/dahjson/roughly",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dahjson/roughly.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.7.1"
+  }
+}
